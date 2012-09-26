@@ -217,6 +217,7 @@ class Configuration implements ConfigurationInterface
                                         'odt', 'odg', 'odp', 'ods', 'odc', 'odf', 'odb',
                                         'csv',
                                         'xml',
+                                        'mp3'
                                     ))
                                 ->end()
                                 ->arrayNode('allowed_mime_types')
@@ -227,7 +228,8 @@ class Configuration implements ConfigurationInterface
                                         'application/vnd.ms-powerpoint', 'application/vnd.oasis.opendocument.text', 'application/vnd.oasis.opendocument.graphics', 'application/vnd.oasis.opendocument.presentation', 'application/vnd.oasis.opendocument.spreadsheet', 'application/vnd.oasis.opendocument.chart', 'application/vnd.oasis.opendocument.formula', 'application/vnd.oasis.opendocument.database', 'application/vnd.oasis.opendocument.image',
                                         'text/comma-separated-values',
                                         'text/xml', 'application/xml',
-                                        'application/zip', // seems to be used for xlsx document ...
+                                        'application/zip',
+                                        'audio/mpeg','audio/mp3',// seems to be used for xlsx document ...
                                     ))
                                 ->end()
                             ->end()
